@@ -4,7 +4,7 @@ import styles from "./Feedback.module.css";
 
 function Feedback({ item, deleteFeedback }) {
   return (
-    <Card>
+    <Card bgColor="white">
       <h2>{item.text}</h2>
       <div className="num-display">{item.rating}</div>
       <button onClick={() => deleteFeedback(item.id)} className="close">

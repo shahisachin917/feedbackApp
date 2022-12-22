@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "./common/Card";
 import FeedbackRating from "./FeedbackRating";
 
 function FeedbackForm({ addFeedback }) {
@@ -32,7 +33,7 @@ function FeedbackForm({ addFeedback }) {
   }
 
   return (
-    <div>
+    <Card>
       <h3>Input your feedback!</h3>
       <FeedbackRating grabRating={grabRating} />
       <form onSubmit={handleSubmit}>
@@ -47,7 +48,7 @@ function FeedbackForm({ addFeedback }) {
       {errorMessage && <div style={{ color: "red" }}>{errorMessage}</div>}
 
       <h1>{text}</h1>
-    </div>
+    </Card>
   );
 }
 

@@ -1,8 +1,10 @@
-import styles from "./Card.module.css";
+import { CardWrapper } from "../../styles/Card/Card";
 
-function Card({ children }) {
+function Card({ children, bgColor }) {
   //   console.log(props);
-  return <div className={styles.card}>{children}</div>;
+  return (
+    <CardWrapper bgColor={bgColor ? bgColor : "pink"}>{children}</CardWrapper>
+  );
 }
 
 export default Card;
