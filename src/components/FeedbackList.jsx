@@ -1,6 +1,6 @@
 import React from "react";
 import Feedback from "./Feedback";
-import Card from "./Card";
+import Card from "./common/Card";
 
 function FeedbackList({ feedback, deleteFeedback }) {
   // 0, '', undefined, null, false, Nan
