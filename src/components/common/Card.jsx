@@ -1,8 +1,8 @@
 import styles from "./Card.module.css";
 
-function Card({ children, bgColor = "red" }) {
+function Card({ children }) {
   //   console.log(props);
-  return <div style={{ backgroundColor: bgColor }}>{children}</div>;
+  return <div className={styles.card}>{children}</div>;
 }
 
 export default Card;

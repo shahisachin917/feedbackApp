@@ -2,7 +2,7 @@ import { useState } from "react";
 import FeedbackRating from "./FeedbackRating";
 
 function FeedbackForm({ addFeedback }) {
-  const [text, setText] = useState("test");
+  const [text, setText] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
   const [rating, setRating] = useState(0);
@@ -40,7 +40,7 @@ function FeedbackForm({ addFeedback }) {
           type="text"
           onChange={handleChange}
           placeholder="Input your feedback!"
-          //value={text}
+          value={text}
         />
         <button disabled={isDisabled}>Submit</button>
       </form>

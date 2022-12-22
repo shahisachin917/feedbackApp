@@ -5,7 +5,7 @@ import Card from "./common/Card";
 function FeedbackList({ feedback, deleteFeedback }) {
   // 0, '', undefined, null, false, Nan
   return (
-    <Card bgColor="green">
+    <div>
       {feedback && typeof feedback !== "string" && feedback.length ? (
         feedback.map((item) => (
           <Feedback key={item.id} item={item} deleteFeedback={deleteFeedback} />
@@ -13,7 +13,7 @@ function FeedbackList({ feedback, deleteFeedback }) {
       ) : (
         <div>No Data Found</div>
       )}
-    </Card>
+    </div>
   );
 }
 

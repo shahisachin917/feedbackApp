@@ -23,16 +23,12 @@ function App() {
     setFeedback([...feedback, newFeedback]); //Getting all the values using spread operator
   }
   return (
-    <>
-      {/* <Header text="Hello" />
-      <Card bgColor="purple">
-        <div>Welcome</div>
-      </Card>
-      <Card bgColor="blue"> */}
+    <div className="container">
+      <Header text="Feedback App"></Header>
       <FeedbackForm addFeedback={addFeedback} />
       <FeedbackList feedback={feedback} deleteFeedback={deleteFeedback} />
       {/* </Card> */}
-    </>
+    </div>
   );
 }
 
