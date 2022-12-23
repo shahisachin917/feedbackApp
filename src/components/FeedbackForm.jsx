@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./common/Button";
 import Card from "./common/Card";
 import FeedbackRating from "./FeedbackRating";
 
@@ -37,13 +38,15 @@ function FeedbackForm({ addFeedback }) {
       <h3>Input your feedback!</h3>
       <FeedbackRating grabRating={grabRating} />
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          onChange={handleChange}
-          placeholder="Input your feedback!"
-          value={text}
-        />
-        <button disabled={isDisabled}>Submit</button>
+        <div className="input-group">
+          <input
+            type="text"
+            onChange={handleChange}
+            placeholder="Input your feedback!"
+            value={text}
+          />
+          <Button isDisabled={isDisabled}>Submit</Button>
+        </div>
       </form>
       {errorMessage && <div style={{ color: "red" }}>{errorMessage}</div>}
 

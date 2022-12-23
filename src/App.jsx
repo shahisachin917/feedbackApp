@@ -6,6 +6,7 @@ import Card from "./components/common/Card";
 import FeedbackForm from "./components/FeedbackForm";
 import FeedbackRating from "./components/FeedbackRating";
 import { v4 as uuidv4 } from "uuid";
+import FeedbackStats from "./components/common/FeedbackStats";
 
 function App() {
   const [feedback, setFeedback] = useState(feedbackData);
@@ -27,6 +28,7 @@ function App() {
       <Header text="Feedback App"></Header>
       <FeedbackForm addFeedback={addFeedback} />
       <FeedbackList feedback={feedback} deleteFeedback={deleteFeedback} />
+      <FeedbackStats feedback={feedback} />
       {/* </Card> */}
     </div>
   );
