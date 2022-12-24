@@ -2,8 +2,9 @@ import { useState } from "react";
 import Button from "./common/Button";
 import Card from "./common/Card";
 import FeedbackRating from "./FeedbackRating";
+import { v4 as uuidv4 } from "uuid";
 
-function FeedbackForm({ addFeedback }) {
+function FeedbackForm({ addFeedback, createFeedback }) {
   const [text, setText] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
@@ -30,10 +31,16 @@ function FeedbackForm({ addFeedback }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    addFeedback({ text, rating });
+    const newFeedback = { text, rating, id: uuidv4() };
+
+    addFeedback(newFeedback); //This will send data to UI in real time so we don't have to refresh it
+    createFeedback(newFeedback);
+
     setText("");
     setIsDisabled(true);
-    setRating(0);
+
+    //TODO
+    //clear input rating as well
   }
 
   return (

@@ -1,6 +1,24 @@
 {
   "feedbacks": [
-    { "text": "React is not that awesome", "rating": 5, "id": 1 },
-    { "text": "This bootcamp is going great!", "rating": 10, "id": 2 }
+    {
+      "text": "React is not that awesome",
+      "rating": 5,
+      "id": 1
+    },
+    {
+      "text": "This bootcamp is going great!",
+      "rating": 10,
+      "id": 2
+    },
+    {
+      "text": "This is the last feedback coming from db.json",
+      "rating": 8,
+      "id": 3
+    },
+    {
+      "text": "sdafsadf  asdf ",
+      "rating": 4,
+      "id": "f53fdba0-919e-4718-885d-51da21a3915b"
+    }
   ]
 }
