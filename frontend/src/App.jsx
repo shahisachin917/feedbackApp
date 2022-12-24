@@ -41,8 +41,8 @@ function App() {
     //DO IT YOURSELF
   };
 
-  const deleteFeedbackFromDB = () => {
-    fetch("http://localhost:4000/feedbacks", {
+  const deleteFeedbackFromDB = (id) => {
+    fetch(`http://localhost:4000/feedbacks/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -64,6 +64,7 @@ function App() {
     //console.log(`You clicked on ${item.text} with id ${item.id}`);
     if (window.confirm("Do you really want to delete this feedback?")) {
       setFeedback(feedback.filter((actualItem) => actualItem.id !== clickedId));
+      deleteFeedbackFromDB(clickedId);
     }
   }
 
