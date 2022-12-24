@@ -31,6 +31,9 @@ function FeedbackForm({ addFeedback }) {
     e.preventDefault();
 
     addFeedback({ text, rating });
+    setText("");
+    setIsDisabled(true);
+    setRating(0);
   }
 
   return (
