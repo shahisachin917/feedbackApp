@@ -77,7 +77,7 @@ function App() {
       <Header text="Feedback App"></Header>
       <FeedbackForm addFeedback={addFeedback} createFeedback={createFeedback} />
       <FeedbackList feedback={feedback} deleteFeedback={deleteFeedback} />
-      <FeedbackStats feedback={feedback} />
+      <FeedbackStats />
       {/* </Card> */}
     </div>
   );
