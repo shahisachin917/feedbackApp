@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import { FeedbackContext } from "./context/FeedbackContext";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <FeedbackContext.Provider>
     <App />
-  </React.StrictMode>
+  </FeedbackContext.Provider>
 );
