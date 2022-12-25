@@ -9,6 +9,31 @@
       "text": "This bootcamp is going great!",
       "rating": 10,
       "id": 2
+    },
+    {
+      "text": "I am explorting this thing",
+      "rating": 0,
+      "id": "b8e0a59c-f368-4b5a-bd58-76f7ca8e5e14"
+    },
+    {
+      "text": "It just doesn't want to get added for some reason",
+      "rating": 0,
+      "id": "979e8790-ae18-458d-85c0-366503457d6c"
+    },
+    {
+      "text": "Hello world and universe",
+      "rating": 8,
+      "id": "4194caf0-45cb-49e2-9d85-cfaac2af41f8"
+    },
+    {
+      "text": "creating feedback",
+      "rating": 0,
+      "id": "69d28d26-7e48-4645-99d9-a7c2c48538f9"
+    },
+    {
+      "text": "sdfsdfsf ssf f",
+      "rating": 7,
+      "id": "3d73af45-a194-4809-a76f-477ec4c779ff"
     }
   ]
 }

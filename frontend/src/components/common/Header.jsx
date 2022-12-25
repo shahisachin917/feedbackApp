@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 
-function Header({ text = "Default", textColor = "purple", bgColor = "white" }) {
+function Header({
+  text = "Feedback App",
+  textColor = "purple",
+  bgColor = "white",
+}) {
   const headerStyles = {
     backgroundColor: bgColor,
     color: textColor,

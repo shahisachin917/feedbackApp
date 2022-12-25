@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { FaTimes } from "react-icons/fa";
+import { FeedbackContext } from "../context/FeedbackContext";
 import Card from "./common/Card";
 import styles from "./Feedback.module.css";
 
-function Feedback({ item, deleteFeedback }) {
+function Feedback({ item }) {
+  const { deleteFeedback } = useContext(FeedbackContext);
   return (
     <Card bgColor="white">
       <h2>{item.text}</h2>
