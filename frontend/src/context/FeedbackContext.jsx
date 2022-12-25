@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react";
+import axios from "axios";
 
 export const FeedbackContext = createContext();
 
@@ -7,8 +8,9 @@ export const FeedbackProvider = ({ children }) => {
 
   const fetchFeedback = async () => {
     try {
-      const response = await fetch("http://localhost:4000/feedbacks");
-      const data = await response.json();
+      const { data } = await axios("http://localhost:4000/feedbacks");
+      console.log(data);
+      // const data = await response.json();
 
       setFeedback(data);
     } catch (error) {
